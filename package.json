@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node -r esm index.js",
-    "start:nodemon": "nodemon -r esm index.js",
+    "start:nodemon": "node -r esm index.js",
+    "start": "nodemon -r esm index.js",
     "git": "git add . && git commit -m "
   },
   "dependencies": {
