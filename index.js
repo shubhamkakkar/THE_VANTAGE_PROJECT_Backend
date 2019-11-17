@@ -13,8 +13,8 @@ const MONGO_URI_DEV = process.env.MONGO_URI_DEV;
 mongoose.connect(MONGO_URI_DEV, {useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true})
     .then(_ => {
         const server = new ApolloServer({typeDefs, resolvers});
-        server.listen({port: process.env.PORT || 2000}).then(({url}) => {
-            console.log(`🚀Server ready at ${url}`);
+        server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+            console.log(`🚀 Server ready at ${url}`);
         });
 
 
