@@ -4,8 +4,8 @@ import cors from 'cors';
 import {config} from "dotenv"
 import {resolve} from "path"
 import {ApolloServer} from 'apollo-server';
-import typeDefs from './src/schema';
-import resolvers from './src/resolvers'
+import typeDefs from './app/schema';
+import resolvers from './app/resolvers'
 
 config({path: resolve(__dirname, "./.env")});
 const MONGO_URI_DEV = process.env.MONGO_URI_DEV;
@@ -14,7 +14,7 @@ mongoose.connect(MONGO_URI_DEV, {useNewUrlParser: true, useFindAndModify: false,
     .then(_ => {
         const server = new ApolloServer({typeDefs, resolvers});
         server.listen({port: process.env.PORT || 2000}).then(({url}) => {
-            console.log(`🚀  Server ready at ${url}`);
+            console.log(`🚀Server ready at ${url}`);
         });
 
 
