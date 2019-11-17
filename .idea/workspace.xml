@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="099e705c-da9c-469e-ae47-4b8d796aed48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/resolvers/rankPrediction/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers/rankPrediction/queries/randkPredictor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers/rankPrediction/queries/rankPredictionDataSet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schema/rankPrediction/rankPrediction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resolvers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resolvers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resolvers/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resolvers/user/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resolvers/user/queries/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resolvers/user/queries/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schema/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schema/users/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema/users/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TjXarpxNtaCcbKVPpuWwAcNj6V" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -59,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573974544064</updated>
-      <workItem from="1573974545405" duration="9043000" />
+      <workItem from="1573974545405" duration="10072000" />
     </task>
     <servers />
   </component>
