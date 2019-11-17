@@ -5,7 +5,7 @@ import {config} from "dotenv"
 import {resolve} from "path"
 
 import {ApolloServer} from 'apollo-server-express';
-import schema from './src/schema';
+import schema from './src/schema/index';
 import resolvers from './src/resolvers'
 
 config({path: resolve(__dirname, "./.env")});
