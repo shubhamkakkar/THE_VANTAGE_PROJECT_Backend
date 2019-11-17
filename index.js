@@ -20,8 +20,9 @@ mongoose.connect(MONGO_URI_DEV, {useNewUrlParser: true, useFindAndModify: false,
         const app = express();
         app.use(cors());
         server.applyMiddleware({app});
-        app.listen({port: 4000}, () =>
-            console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
+        const port = process.env.PORT || 4000;
+        app.listen({port}, () =>
+            console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath} ${port}`)
         );
     })
     .catch((er) => console.log("failed to connect to mongoose", er));
