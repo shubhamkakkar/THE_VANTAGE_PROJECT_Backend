@@ -9,7 +9,6 @@
     "git": "git add . && git commit -m "
   },
   "dependencies": {
-    "nodemon": "^1.19.4",
     "apollo-server-express": "^2.9.9",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -18,8 +17,10 @@
     "express": "^4.17.1",
     "graphql": "^14.5.8",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.11"
+    "mongoose": "^5.7.11",
+    "nodemon": "^1.19.4"
   },
   "devDependencies": {
+    "apollo-server": "^2.9.9"
   }
 }

@@ -4,7 +4,7 @@ import cors from 'cors';
 import {config} from "dotenv"
 import {resolve} from "path"
 
-import {ApolloServer} from 'apollo-server-express';
+import {ApolloServer} from 'apollo-server';
 import schema from './src/schema/index';
 import resolvers from './src/resolvers'
 
@@ -17,13 +17,16 @@ mongoose.connect(MONGO_URI_DEV, {useNewUrlParser: true, useFindAndModify: false,
             typeDefs: schema,
             resolvers
         });
-        const app = express();
-        app.use(cors());
-        server.applyMiddleware({app});
-        const port = process.env.PORT || 4000;
-        app.listen({port}, () =>
-            console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath} ${port}`)
-        );
+        // const app = express();
+        // app.use(cors());
+        server.listen({port: process.env.PORT || 4000}).then(({url}) => {
+            console.log(`🚀 Server ready at ${url}`);
+        });
+        // server.applyMiddleware({app});
+
+        // app.listen({port}, () =>
+        //     console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath} ${port}`)
+        // );
     })
     .catch((er) => console.log("failed to connect to mongoose", er));
 
