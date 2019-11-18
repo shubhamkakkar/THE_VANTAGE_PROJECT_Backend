@@ -1,12 +1,13 @@
 import QASchema from "../../../models/QA"
-import {GraphQLError} from "graphql";
+import { GraphQLError } from "graphql";
 
-export default function evaluateQAQuery({_id, statedAnswerIndex}) {
+export default function evaluateQAQuery({ _id, statedAnswerIndex }) {
     return QASchema.findById(_id)
-        .then(({answerIndex, recommendation}) => {
+        .then(({ answerIndex, recommendation }) => {
             let returnObj = {
                 score: 0,
-                recommendation
+                recommendation,
+                answerIndex
             };
             if (answerIndex === statedAnswerIndex) {
                 returnObj = {
@@ -19,6 +20,9 @@ export default function evaluateQAQuery({_id, statedAnswerIndex}) {
                     score: -1
                 }
             }
+
+            console.log({ returnObj })
+
             return returnObj
         }).catch(er => new GraphQLError("Error evaluating, try again"))
 }

@@ -1,4 +1,4 @@
-import {gql} from 'apollo-server-express';
+import { gql } from 'apollo-server-express';
 
 export default gql`
     extend  type Mutation {
@@ -18,7 +18,8 @@ export default gql`
 
     type ReturnEvalutaion{
         recommendation : String
-        score: Int!
+        score: Int!,
+        answerIndex: Int!
     }
 
     type OptionReturn {
